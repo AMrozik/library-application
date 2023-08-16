@@ -1,0 +1,9 @@
+services:
+  postgres:
+    image: 'docker.io/postgres:latest'
+    environment:
+      - 'POSTGRES_DB=libprod'
+      - 'POSTGRES_PASSWORD=librapp'
+      - 'POSTGRES_USER=librapp'
+    ports:
+      - '5432:5432'
