@@ -1,0 +1,10 @@
+spring:
+  jpa:
+    database: POSTGRESQL
+    show-sql: true
+  datasource:
+    platform: postgres
+    url: jdbc:postgresql://localhost:5432/libprod
+    username: librapp
+    password: librapp
+    driverClassName: org.postgresql.Driver
