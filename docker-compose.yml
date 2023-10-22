@@ -5,5 +5,7 @@ services:
       - 'POSTGRES_DB=libprod'
       - 'POSTGRES_PASSWORD=librapp'
       - 'POSTGRES_USER=librapp'
+    volumes:
+      - ./init-database.sh:/docker-entrypoint-initdb.d/init-database.sql
     ports:
       - '5432:5432'
